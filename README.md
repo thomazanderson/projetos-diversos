@@ -1,2 +1,2 @@
-# projetos-diversos
-Repositório para reunir projetos diversos
+# Projetos diversos
+Repositório para reunir projetos diversos pessoais.
