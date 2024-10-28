@@ -1,1 +1,7 @@
-
+.Meio {
+    font-family: arial;
+    color: black;
+    background-color: bisque;
+    font-size: 23px;
+    margin: auto; 
+}
