@@ -1,5 +1,5 @@
 ## Site para o Instituto Jus
-> _Desenvolvimento de site para institudo do terceiro setor._
+> _Desenvolvimento de site para instituto do terceiro setor._
 
 ## Autoria
 Thomaz Barbosa
