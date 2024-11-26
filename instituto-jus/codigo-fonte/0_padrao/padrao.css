@@ -1,0 +1,91 @@
+:root {
+    --bordeaux: #8D191D;
+    --golden: #837626;
+    --purple: #541B4A;
+    --salmon: #A54B35;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --fundo: #f8f8f8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+/* estilos para o header */
+header {
+  background-color: #F8F8F8;  
+  border-bottom: 2px solid #ccc;
+}
+
+/* estilos para o container da logo e do nome da empresa */
+header .cabecalho {
+  display: flex;
+  align-items: center;
+}
+
+/* estilos para a logomarca */
+header .logo img {
+  width: 350px;
+  height: auto;
+  margin-right: 30px;
+  margin-top: 20px;  
+  justify-content: flex-start;
+}
+/* estilos para o nome da empresa */
+header .empresa h1 {
+  font-size: 24px;
+  color:#A54B35;
+  margin: 0;
+  justify-content: flex-end;
+}
+/* estilos para a navegação */
+header .navegacao {
+  background-color:#8D191D;
+  padding: 10px 0;
+  margin-top: 20px;
+  margin: 20 0;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  margin-right: 50px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #F8F8F8;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #f7baaa;
+}
+
+main {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+footer {
+  display: block;
+  background-color:#8D191D;
+  color: #F8F8F8;
+  padding: 10px;
+  text-align: center;  
+}
