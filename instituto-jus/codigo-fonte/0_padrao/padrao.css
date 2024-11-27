@@ -23,6 +23,9 @@ border-bottom: 2px solid #ccc;
 header .cabecalho {
 display: flex;
 align-items: center;
+justify-content: space-between;
+margin-right: 50px;
+margin-left: 20px;
 }
 
 /* estilos para a logomarca */
@@ -36,8 +39,8 @@ justify-content: flex-start;
 /* estilos para o nome da empresa */
 header .empresa h1 {
 font-size: 24px;
-color:#A54B35;
-margin: 0;
+color:#8D191D;
+margin: 20px 5px 5px 5px;
 justify-content: flex-end;
 }
 /* estilos para a navegação */
@@ -69,6 +72,13 @@ nav ul li a {
 text-decoration: none;
 color: #F8F8F8;
 font-size: 16px;
+}
+
+.menuicon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }
 
 nav ul li a:hover {
@@ -210,30 +220,48 @@ footer form .btn:hover {
 
 /* Responsividade */
 @media (max-width: 768px) {
-  header .navegacao nav ul {
-    flex-direction: column;
-    align-items: center;
+  nav ul {
+    display: block;
+    padding: 0;
   }
 
   nav ul li {
-    margin-right: 0;
-    margin-bottom: 20px; /* Espaço entre os itens de navegação */
+    text-align: left;
+    position: relative;
   }
 
-  nav ul li:last-child {
-    margin-bottom: 0; /* Remove o espaço extra do último item */
-  }
-
-  /* Ajusta o tamanho da fonte dos links na navegação */
   nav ul li a {
-    font-size: 18px; /* Aumenta o tamanho da fonte para facilitar a leitura */
+    font-size: 14px;
+    color: #F8F8F8;
+    padding: 10px 10px;
+    text-align: left;
+    display: block;
+    margin-left: 50px;
+    width: calc(100%-50px);
+    box-sizing: border-box;
   }
 
-  /* Adiciona algum padding para melhorar a usabilidade em telas pequenas */
-  nav ul li a {
-    padding: 10px 0;
-  }  
-  
+  nav ul li:not(:last-child)::after{
+    content: '';
+    position:absolute;    
+    left: 60px;
+    bottom:0;
+    height: 0.5px;
+    background-color: #F8F8F8;
+    width: 30%;    
+    margin-bottom: 5px;
+  }
+
+  nav ul li a:hover {
+    color: #f7baaa;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+  }
+
   footer {
     flex-direction: column; /* Em telas menores, as divs se empilham uma em cima da outra */
     align-items: center; /* Alinha as divs no centro */
@@ -248,35 +276,5 @@ footer form .btn:hover {
 
   footer .right {
     border-left: none; /* Remove borda à esquerda na versão mobile */
-  }
-}
-
-
-
-@media (max-width: 768px) {
-  /* Alinha a navegação verticalmente em telas menores */
-  header .navegacao nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Remove o espaçamento entre os itens de navegação */
-  nav ul li {
-    margin-right: 0;
-    margin-bottom: 20px; /* Espaço entre os itens de navegação */
-  }
-
-  nav ul li:last-child {
-    margin-bottom: 0; /* Remove o espaço extra do último item */
-  }
-
-  /* Ajusta o tamanho da fonte dos links na navegação */
-  nav ul li a {
-    font-size: 18px; /* Aumenta o tamanho da fonte para facilitar a leitura */
-  }
-
-  /* Adiciona algum padding para melhorar a usabilidade em telas pequenas */
-  nav ul li a {
-    padding: 10px 0;
   }
 }
