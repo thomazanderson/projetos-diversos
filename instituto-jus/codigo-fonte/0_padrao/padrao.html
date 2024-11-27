@@ -9,6 +9,7 @@
     <title>Padrão</title>
     <meta name="keywords" content="instituto, sociedade civil, democracia.">
     <link rel="stylesheet" href="padrao.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script defer src="padrao.js"></script>
 </head>
 <body>
@@ -29,7 +30,6 @@
                 <li><a href="../3_projetos/projetos.html">Projetos</a></li>
                 <li><a href="../4_publicacoes/publicacoes.html">Publicações</a></li>
                 <li><a href="../5_videos/videos.html">Vídeos</a></li>
-                <li><a href="../6_contato/contato.html">Contato</a></li>
             </ul>
         </nav>        
     </div>    
@@ -44,10 +44,33 @@
     </section>
   </main>
   <footer>
-    <p>Telefone: +55 113726-2495</p>
-    <p>E-mail: institutojus@gmail.com</p>
-    <p>Rua Doutor Clovis de Oliveira, 166</p>
-    <p>Vila Progredior - São Paulo/SP - CEP 05616-130</p>
+    <div class="left">
+      <h4 class="titlefooter">Instituto JUS</h4>
+      <div class="contatos">
+        <p>Telefone: +55 11 3726-2495</p>
+        <p>E-mail: institutojus@gmail.com</p>
+        <p>Rua Doutor Clovis de Oliveira, 166</p>
+        <p>Vila Progredior - São Paulo/SP - CEP 05616-130</p>
+      </div>
+      <div class="footericons">      
+        <a href="https://www.linkedin.com/company/instituto-jus"><i class="fa fa-linkedin"></i></a>        
+        <a href="https://www.instagram.com/institutojus"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/institutoJUS"><i class="fa fa-facebook"></i></a>
+      </div>
+      <div class="copyright">
+        <p>Site desenvolvido por Actante Analítica | © 2024 Instituto JUS.</p>
+      </div>
+    </div>
+    <div class="right">
+      <h4 class="titlefooter">Contato</h4>
+      <form action="#" method="post">
+        <input type="text" name="nome" placeholder="Nome" required=""/>
+        <input type="email" name="email" placeholder="E-mail" required=""/>
+        <input type="text" name="assunto" placeholder="Assunto" required=""/>
+        <textarea name="messagem" placeholder="Messagem" required=""></textarea>
+        <button class="btn">Enviar</button>
+      </form>
+    </div>
   </footer>
 </body>
 </html>

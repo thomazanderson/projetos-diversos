@@ -1,91 +1,282 @@
 :root {
-    --bordeaux: #8D191D;
-    --golden: #837626;
-    --purple: #541B4A;
-    --salmon: #A54B35;
-    --branco: #FFFFFF;
-    --preto: #000000;
-    --fundo: #f8f8f8;
+  --bordeaux: #8D191D;
+  --golden: #837626;
+  --purple: #541B4A;
+  --salmon: #A54B35;
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --fundo: #f8f8f8;
 }
 
 body {
-  margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+margin: 0;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
 }
 
 /* estilos para o header */
 header {
-  background-color: #F8F8F8;  
-  border-bottom: 2px solid #ccc;
+background-color: #F8F8F8;  
+border-bottom: 2px solid #ccc;
 }
 
 /* estilos para o container da logo e do nome da empresa */
 header .cabecalho {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 /* estilos para a logomarca */
 header .logo img {
-  width: 350px;
-  height: auto;
-  margin-right: 30px;
-  margin-top: 20px;  
-  justify-content: flex-start;
+width: 350px;
+height: auto;
+margin-right: 30px;
+margin-top: 20px;  
+justify-content: flex-start;
 }
 /* estilos para o nome da empresa */
 header .empresa h1 {
-  font-size: 24px;
-  color:#A54B35;
-  margin: 0;
-  justify-content: flex-end;
+font-size: 24px;
+color:#A54B35;
+margin: 0;
+justify-content: flex-end;
 }
 /* estilos para a navegação */
 header .navegacao {
-  background-color:#8D191D;
-  padding: 10px 0;
-  margin-top: 20px;
-  margin: 20 0;
+background-color:#8D191D;
+padding: 10px 0;
+margin-top: 20px;
+margin: 20 0;
 }
 
 nav ul{
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 10px;
-  text-transform: uppercase;
+display: flex;
+justify-content: center;
+list-style: none;
+padding: 0;
+margin: 10px;
+text-transform: uppercase;
 }
 
 nav ul li {
-  margin-right: 50px;
+margin-right: 50px;
 }
 
 nav ul li:last-child {
-  margin-right: 0;
+margin-right: 0;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #F8F8F8;
-  font-size: 16px;
+text-decoration: none;
+color: #F8F8F8;
+font-size: 16px;
 }
 
 nav ul li a:hover {
-  color: #f7baaa;
+color: #f7baaa;
 }
 
 main {
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
+margin: 10px;
+padding: 20px;
+text-align: center;
+justify-content: center;
 }
 
+/* Estilo do rodapé */
 footer {
-  display: block;
-  background-color:#8D191D;
+  background-color: #8D191D;
   color: #F8F8F8;
-  padding: 10px;
-  text-align: center;  
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  padding: 20px 20px 20px 20px;
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .left,
+footer .right {
+  width: 46%;
+}
+
+footer .left{
+  margin-left: 50px;
+  border-right: 0.5px solid #A54B35;
+}
+
+footer .titlefooter {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer .contatos {
+  display: block;
+  line-height: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer .copyright {
+  font-size: 12px;  
+  align-items: end;  
+}
+
+footer .footericons {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;  
+}
+
+footer .footericons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #F8F8F8;
+  color: #8D191D;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 20px;  
+  line-height: 35px;  
+  margin-top: 20px;
+  margin-bottom: 10px;  
+  transition: 0.3s;
+}
+
+footer .footericons a:hover {
+  background-color: #A54B35;
+}
+
+footer form {
+  width: 100%;
+  display: block;
+}
+
+footer form input,
+footer form textarea {
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #F8F8F8;
+  box-shadow: 0 1px 0 0 #8D191D;
+  border: none;
+  resize: none;
+  outline: none;
+  font: inherit;
+  font-size: 14px;
+  color: #000;
+  width: 96%;  
+  padding: 18px;
+}
+
+footer ::-webkit-input-placeholder {
+  color: #5c666b;
+}
+
+footer ::-moz-placeholder {
+  color: #5c666b;
+  opacity: 1;
+}
+
+footer :-ms-input-placeholder {
+  color: #5c666b;
+}
+
+footer form input {
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+footer form textarea {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+footer form .btn {
+  border-radius: 3px;
+  border: 0;
+  color: #8D191D;
+  padding: 15px 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer form .btn:hover {
+  background-color: #A54B35;
+  color: #F8F8F8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header .navegacao nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 20px; /* Espaço entre os itens de navegação */
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 0; /* Remove o espaço extra do último item */
+  }
+
+  /* Ajusta o tamanho da fonte dos links na navegação */
+  nav ul li a {
+    font-size: 18px; /* Aumenta o tamanho da fonte para facilitar a leitura */
+  }
+
+  /* Adiciona algum padding para melhorar a usabilidade em telas pequenas */
+  nav ul li a {
+    padding: 10px 0;
+  }  
+  
+  footer {
+    flex-direction: column; /* Em telas menores, as divs se empilham uma em cima da outra */
+    align-items: center; /* Alinha as divs no centro */
+    padding: 30px 10px; /* Ajuste no padding */
+  }
+
+  footer .left,
+  footer .right {
+    width: 100%; /* As divs ocupam toda a largura em telas pequenas */
+    margin-bottom: 20px;
+  }
+
+  footer .right {
+    border-left: none; /* Remove borda à esquerda na versão mobile */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  /* Alinha a navegação verticalmente em telas menores */
+  header .navegacao nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Remove o espaçamento entre os itens de navegação */
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 20px; /* Espaço entre os itens de navegação */
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 0; /* Remove o espaço extra do último item */
+  }
+
+  /* Ajusta o tamanho da fonte dos links na navegação */
+  nav ul li a {
+    font-size: 18px; /* Aumenta o tamanho da fonte para facilitar a leitura */
+  }
+
+  /* Adiciona algum padding para melhorar a usabilidade em telas pequenas */
+  nav ul li a {
+    padding: 10px 0;
+  }
 }
