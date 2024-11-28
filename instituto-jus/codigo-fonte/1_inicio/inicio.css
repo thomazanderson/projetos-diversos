@@ -1,0 +1,279 @@
+:root {
+    --bordeaux: #8D191D;
+    --golden: #837626;
+    --purple: #541B4A;
+    --salmon: #A54B35;
+    --complementar: #0e2730;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --fundo: #f8f8f8;
+
+  }
+  
+  * {
+    box-sizing: border-box; /* Inclui padding e border no cálculo do width */
+  }
+
+  body {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  }
+  
+  /* estilos para o header */
+  header {
+  background-color: #F8F8F8;  
+  border-bottom: 2px solid #ccc;
+  width: 100vw;
+  }
+  
+  /* estilos para o container da logo e do nome da empresa */
+  header .cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  }
+  
+  /* estilos para a logomarca */
+  header .logo img {
+  width: 350px;
+  height: auto;
+  margin-top: 20px
+  }
+  /* estilos para o nome da empresa */
+  header .empresa h1 {
+  font-size: 24px;
+  color:#8D191D;
+  }
+  /* estilos para a navegação */
+  header .navegacao {
+  background-color: #0e2730;
+  padding: 10px 0;
+  }
+  
+  nav ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+  }
+  
+  nav ul li {
+  margin-right: 50px;
+  }
+  
+  nav ul li:last-child {
+  margin-right: 0;
+  }
+  
+  nav ul li a {
+  text-decoration: none;
+  color:#F8F8F8;
+  font-size: 18px;
+  }
+  
+  .menuicon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  nav ul li a:hover {
+  color:#837626;
+  }
+
+  main {
+    width: 100vw;
+    background-color: var(--fundo);
+  }
+
+  .container {    
+    display:flex;
+    justify-content: space-between;    
+    font-size: 20px;
+    font-weight: bolder;
+    height: 250px;    
+  }
+
+  .container div{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    color:#F8F8F8;
+    padding: 20px;
+  }
+
+  #democracia{
+    background-color: #8D191D;
+  }
+
+  #participacao{
+    background-color:#837626;
+  }
+
+  #direitos{
+    background-color:#541B4A;
+  }
+
+  #sustentabilidade{
+    background-color: #A54B35;
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%); /* Começa fora da tela à esquerda */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* Fica na posição original */
+    }
+  }
+  
+  .container div {
+    opacity: 0; /* Começa invisível */
+    transform: translateX(-100%); /* Começa fora da tela */
+    animation: slideIn 0.5s forwards; /* Aplica a animação */
+  }
+  
+  /* Atraso para cada coluna */
+  .container div:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .container div:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .container div:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  .container div:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+
+  /* Estilo do rodapé */
+  footer {
+    background-color:#0e2730;
+    color: #F8F8F8;
+    width: 100vw;
+    margin: 0;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  footer .left,
+  footer .right {
+    width: 46%;
+    padding: 10px;
+  }
+  
+  footer .left{
+    margin-right: 2%;
+    border-right: 0.5px solid #F8F8F8;
+  }
+
+  footer .right{
+    margin-left: 0;
+  }
+  
+  footer .titlefooter {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  footer .contatos {
+    display: block;
+    line-height: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  footer .copyright {
+    font-size: 12px; 
+  }
+  
+  footer .footericons {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+  }
+  
+  footer .footericons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #F8F8F8;
+    color: #0e2730;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;  
+    line-height: 35px;  
+    margin-top: 20px;
+    margin-bottom: 10px;  
+    transition: 0.3s;
+  }
+  
+  footer .footericons a:hover {
+    background-color: #837626;
+  }  
+
+  footer form input,
+footer form textarea {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-color: #F8F8F8;
+  box-shadow: 0 1px 0 0 #0e2730;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+footer form .btn {
+  border-radius: 3px;
+  border: 0;
+  color: #0e2730;
+  padding: 15px 40px;
+  font-weight: bold;
+  cursor: pointer;  
+}
+
+footer form .btn:hover {
+  background-color: #837626;
+  color: #F8F8F8;
+}
+
+@media (max-width: 768px) {
+    header .cabecalho {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer .left,
+    footer .right {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+}
+  
